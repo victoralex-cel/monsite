@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  }  
+  
+body{
+  font-family: montserrat;
+}
+details[open] > div{
+  animation: fade 0.3s ease-in-out;
+}
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+.logoEntete{
+  color: #024D93; 
+  font-style: italic; 
+  font-size: 50px; 
+  font-weight: bold;
+  margin-left: 10%;
+}
+nav{
+  /* #E74E0F #024D93*/
+  background: #E74E0F ;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+nav img{
+  
+  float: left;
+  margin-top: 0px;
+  margin-left: 50px;
+  height: 100px; 
+  padding: 0px; 
+  width: 200px;
+}
+label.logo{
+  color: #184BB0;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+   margin-top: 30px;
+  margin-right: 50px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+div.iconTel{
+  display:flex; 
+  border-style:double; 
+  border-width: 1px; 
+  margin-right: 100px;
+}
+a.active,a:hover{
+  color: white;
+  background: #024D93;
+  transition: .5s;
+}
+.btnTel {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #024D93;
+}
+.btnTel:hover{
+  background-color: blue;
+}
+.imgDiv{
+  float: left; 
+  padding-left: 150px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #024D93;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+div.imgDiv{
+  padding-left: 50px;
+}
+div.titreDiv{
+   margin-top: 65px; 
+   margin-right:10%;
+}
+div.iconTel{
+  border-style:double; 
+  border-width: 1px; 
+  margin-right: 100px;
+}
+
+@media (max-width: 952px){
+  .logoEntete{
+  color: #024D93; 
+  font-style: italic; 
+  font-size: 50px; 
+  font-weight: bold;
+  margin-left: 5%;
+}
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 16px;
+  }
+  nav img{
+  padding: 10px;
+  float: left;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 100px; 
+  width: 150px;
+}
+
+}
+@media (max-width: 858px){
+
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background:  #024D93;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  div.titreDiv{
+   margin-top: 5px; 
+   margin-right:5%;
+}
+div.iconTel{
+  border-width: 1px; 
+  margin-right: 10px;
+}
+div.imgDiv{
+  padding-left: 20px;
+}
+}
+    
+
+/*//////////////////////////////////////////Footer*/
+.btn1 {
+    height: 50px;
+    width: 50px;
+    background: #0082e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+
+.content1{
+  
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d9d9d9
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  margin-top: 20px;
+ color: white;
+  bottom: 0px;
+  width: 100%;
+  background: #024D93;
+}
+.presentation{
+  /* #E74E0F #024D93*/
+  margin-right: 10%;
+  border-top-color: #024D93;
+  border-top-width: 10px;
+
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #FFFFFF;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #E74E0F;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: orange;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background:#E74E0F;
+}
+.bottom center span{
+  color: #FFFFFF;
+}
+.bottom center a{
+  color: #024D93;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.addActuBtn{
+  float: right; 
+  background-color: #E74E0F;
+}
+.addActuBtn:hover{ 
+  background-color: orange;
+}
+.addActuBtn i{ 
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  footer{
+    bottom: 0px;
+  }
+  .box .content{
+  position: inherit;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+
+}
+
+/*Add Actu form*/
+.addActuS{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #024D93;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: lightblue;
+}
+input[type=submit].cancelBtn {
+  background-color: #E74E0F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit].cancelBtn:hover {
+  background-color: orange;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.info-banner {
+  background-color: #F9A825;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=submit].cancelBtn, .container {
+    width: 100%;
+    margin-top: 0;
+  }
+  .addActuS{
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
